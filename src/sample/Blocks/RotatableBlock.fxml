@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root prefHeight="10.0" prefWidth="10.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="18.0" prefHeight="150.0" prefWidth="40.0" style="-fx-background-color: gray; -fx-background-radius: 5; -fx-border-color: Black; -fx-border-radius: 5;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <ImageView fx:id="block" fitHeight="128.0" fitWidth="128.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+               <image>
+                   <Image url="@../resources/BRICK16.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttonLeft" layoutX="8.0" layoutY="139.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="48.0">
+               <graphic>
+                  <ImageView fx:id="imageViewLeft" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/arrowLeft.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="buttonRight" layoutX="78.0" layoutY="139.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="48.0">
+               <graphic>
+                  <ImageView fx:id="imageViewRight" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/arrowRight.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</fx:root>
