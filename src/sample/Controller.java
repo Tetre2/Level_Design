@@ -25,6 +25,7 @@ public class Controller implements Initializable {
         int size = 16;
 
         BlockController bc = new BlockController();
+
         for (int col = 0; col < size; col++) {
             for (int row = 0; row < size; row++) {
                 Block b = new Block(bc); //TODO
@@ -33,7 +34,6 @@ public class Controller implements Initializable {
                 gridPaneCanvas.getChildren().add(b);
             }
         }
-
 
         RotatableBlock r = new RotatableBlock(bc);
         flowPanePallet.getChildren().add(r);

@@ -1,0 +1,26 @@
+
+
+
+.anchorPane-pliancy{
+    -fx-background-color: #E0E0E0;
+    -fx-background-radius: 5px;
+    -fx-border-color: #36393D;
+    -fx-border-radius: 5px;
+}
+
+.anchorPane-pliancy:hover{
+    -fx-background-color: #f7f8f9;
+}
+
+.anchorPane-pliancy:pressed{
+    -fx-background-color: #efefea;
+}
+
+.selected{
+    -fx-background-color: #fcf93c;
+}
+
+.notselected{
+    -fx-background-color: #E0E0E0;
+
+}

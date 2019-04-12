@@ -6,16 +6,12 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<fx:root prefHeight="10.0" prefWidth="10.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root onMouseClicked="#setOnClick" prefHeight="10.0" prefWidth="10.0" stylesheets="@Block.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane layoutX="10.0" layoutY="18.0" prefHeight="150.0" prefWidth="40.0" style="-fx-background-color: gray; -fx-background-radius: 5; -fx-border-color: Black; -fx-border-radius: 5;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <AnchorPane fx:id="back" layoutX="10.0" layoutY="18.0" prefHeight="150.0" prefWidth="40.0" styleClass="anchorPane-pliancy" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
          <children>
-            <ImageView fx:id="block" fitHeight="128.0" fitWidth="128.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
-               <image>
-                   <Image url="@../resources/BRICK16.png" />
-               </image>
-            </ImageView>
-            <Button fx:id="buttonLeft" layoutX="8.0" layoutY="139.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="48.0">
+            <ImageView fx:id="block" fitHeight="128.0" fitWidth="128.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+            <Button fx:id="buttonLeft" layoutX="8.0" layoutY="139.0" mnemonicParsing="false" onMouseClicked="#goLeft" prefHeight="30.0" prefWidth="48.0">
                <graphic>
                   <ImageView fx:id="imageViewLeft" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -24,7 +20,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="buttonRight" layoutX="78.0" layoutY="139.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="48.0">
+            <Button fx:id="buttonRight" layoutX="78.0" layoutY="139.0" mnemonicParsing="false" onMouseClicked="#goRight" prefHeight="30.0" prefWidth="48.0">
                <graphic>
                   <ImageView fx:id="imageViewRight" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                      <image>
