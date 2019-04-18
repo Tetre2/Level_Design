@@ -40,7 +40,13 @@ public class Block extends AnchorPane {
 
     @FXML
     public void setOnClick() {
-        block.setImage(bc.getImage());
+
+        if(bc.getImage() != null) {
+            block.setImage(bc.getImage());
+        }else{
+            System.out.println("No Block Seleckted");
+        }
+
     }
 
 

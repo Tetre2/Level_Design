@@ -92,7 +92,7 @@ public class RotatableBlock extends AnchorPane {
     public void setSelected(boolean selected) {
         isSelected = selected;
 
-        if(selected){
+        if(selected){//sets the style based on Block.css
             back.getStyleClass().add("selected");
         }else {
             back.getStyleClass().add("notselected");
