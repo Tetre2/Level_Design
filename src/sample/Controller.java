@@ -18,13 +18,29 @@ public class Controller implements Initializable {
     @FXML private GridPane gridPaneCanvas;
     @FXML private FlowPane flowPanePallet;
     private List<Block> blocks = new ArrayList<>();
+    private BlockController bc;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         //flowPaneCanvas = new FlowPane();
-        int size = 16;
 
-        BlockController bc = new BlockController();
+
+        bc = new BlockController();
+        newScene();
+
+
+        RotatableBlock r = new RotatableBlock(bc);
+        flowPanePallet.getChildren().add(r);
+
+    }
+
+    @FXML private void newScene(){
+
+        int size = 16;
+        blocks.clear();
+        gridPaneCanvas.getChildren().clear();
+        gridPaneCanvas.getColumnConstraints().clear();
+        gridPaneCanvas.getRowConstraints().clear();
 
         for (int col = 0; col < size; col++) {
             for (int row = 0; row < size; row++) {
@@ -34,9 +50,19 @@ public class Controller implements Initializable {
                 gridPaneCanvas.getChildren().add(b);
             }
         }
+    }
 
-        RotatableBlock r = new RotatableBlock(bc);
-        flowPanePallet.getChildren().add(r);
+
+
+    @FXML private void save(){
 
     }
+
+    @FXML private void open(){
+
+    }
+
+
+
+
 }

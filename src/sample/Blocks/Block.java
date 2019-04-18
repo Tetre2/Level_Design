@@ -12,6 +12,8 @@ public class Block extends AnchorPane {
 
     @FXML private ImageView block;
     private BlockController bc;
+    private String ID = "";
+
 
     public Block(BlockController bc) {
 
